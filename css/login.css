@@ -1,0 +1,41 @@
+.top{
+    height: 2.7rem;
+    background: #EAEAEA;
+}
+.logo {
+    margin:4.2rem auto 5.2rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+   overflow: hidden;
+}
+.login-input{
+    margin: 1.3rem 3rem;
+}
+.login-input input{
+    height:4rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.login-input button{
+    height:4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    width:100%;
+    color: #FFFFFF;
+    background-color: #1296DB;
+    text-align: center;
+}
+.register-container{
+    margin:2rem 3.8rem 2.5rem 3.8rem;
+}
+.register{
+    font-size: 1.5rem;
+    float: right;
+}
+.moreWay{
+    display:flex;
+    justify-content: space-around;
+    margin:11rem 2rem 1rem 2rem;
+}

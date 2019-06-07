@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>replyConsult</title>
+    <link rel="stylesheet" type="text/css" href="../css/replyConsult.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <div class="return" id="return">
+            <span class="iconfont">&#xe6d0;</span>
+        </div>
+        <div class="title">
+            <div style="font-size: 2rem;letter-spacing: 0.1rem;margin-bottom: 0.5rem;font-weight: bold;">回复Adey的咨询</div>
+            <div style="font-size: 1.4rem;letter-spacing: 0.1rem;color: #1296db;">¥30.0（第三方渠道抽成，实得27.70）</div>
+        </div>
+    </div>
+    <div class="question">
+        <div style="font-size: 2.0rem;letter-spacing: 0.1rem;line-height: 2rem;">人工智能今后会有哪些发展方向？</div>
+        <br>
+        <div style="font-size: 1.6rem;letter-spacing: 0.1rem;line-height: 2rem;">随着深度学习技术的成熟，AI人工智能正在逐步从尖端技术慢慢变得普及。AlphaGo和人类的对弈，并不是我们以往所理解的电子游戏，电子游戏的水平永远不会提升，而AlphaGo则具备了人工智能最关键的“深度学习”功能。</div>
+        <br>
+        <div style="font-size: 1.6rem;letter-spacing: 0.1rem;line-height: 2rem;">AlphaGo中有两个深度神经网络，Value Networks（价值网络）和 Policy Networks（策略网络）。其中Value Networks评估棋盘选点位置，Policy Networks选择落子。</div>
+        <br>
+        <div style="font-size: 1.6rem;letter-spacing: 0.1rem;line-height: 2rem;">这些神经网络模型通过一种新的方法训练，结合人类专家比赛中学到的棋谱，以及在自己和自己下棋（Self-Play）中进行强化学习。也就是说，人工智能的存在，能够让AlphaGo的围棋水平在学习中不断上升。</div>
+        <div class="consult_time">2019-01-06</div>
+    </div>
+    <div class="divide_line"></div>
+    <div class="rule_box">
+        <div class="rule_title">--------------规则说明--------------</div>
+        <div class="rule_text">1.需在被咨询的48小时内应答，若超时未应答则此咨询作废。如果问题超出自己的能力范围没有办法提供帮助，可以拒绝回答；2.应答后，用户可以在48小时内针对你的回答进行追问，允许多次追问，在追问达到次数限制或超时后，咨询将自动关闭；3.咨询结束后，用户将会对你的服务进行评价；4.如果用户想和其他人分享咨询可以将咨询结果公开，其他用户通过付费或者免费的方式可以浏览本次咨询，所以请不要涉及个人隐私；5.根据第三方要求，支付将会收取部分手续费，这笔费用将从咨询的费用中扣除。</div>
+    </div>
+    <div class="reply">
+        <div class="refuse">拒绝回答</div>
+        <div class="accept" id="accept">立即回答</div>
+    </div>
+</div>
+<script src="../js/return.js"></script>
+<script>
+    (function () {
+        document.getElementById('accept').addEventListener('click',function () {
+            window.location.href='reply.html';
+        })
+    })()
+</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>privateLetter</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/privateLetter.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+</head>
+<body>
+<!--顶部状态栏-->
+<div class="statusBar"></div>
+<div class="top">
+    <!--顶部标题-->
+    <div class="left">
+        <div class="arrow">
+            <img src="../icon/arrow.png"  width="16px" height="16px">
+        </div>
+        <div class="title"><h2>用户昵称或备注</h2></div>
+    </div>
+    <div class="right"><span>向他付费咨询</span></div>
+</div>
+<div class="divideLine"></div>
+<!--聊天内容显示-->
+<div class="middle" id="container">
+    <div class="timeShow" id="time">12:30</div>
+    <div class="talkShow">
+        <div class="userA">
+            <div class="userAImge">
+                <img src="../icon/user.png" width="40px" height="40px">
+            </div>
+            <div class="userATalk">
+                <span id="userASay">吃饭了吗？</span>
+            </div>
+        </div>
+        <div class="userA">
+            <div class="userAImge">
+                <img src="../icon/user.png" width="40px" height="40px">
+            </div>
+            <div class="userImg">
+                <img src="../icon/picture.jpg" style="height: 100%;width: 100%">
+            </div>
+        </div>
+        <div class="userB">
+            <div class="userBImage">
+                <img src="../icon/user1.png " width="40px" height="40px">
+            </div>
+            <div class="userBTalk">
+                <span id="userBSay">还没呢，你呢？</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--聊天输入框-->
+
+<div class="bottom">
+    <div class="divideLine"></div>
+    <div class="input">
+        <div class="left">
+            <div class="voice"><i class="iconfont">&#xe8d1;</i></div>
+            <textarea class="talkWord" id="talkwords" cols="1" rows="1"></textarea>
+        </div>
+        <div class="right">　
+                　　<input type="file" id="chooseImg" style="display: none">　　
+                　　<div class="emoji">
+                    <label for="chooseImg">
+                        <i class="iconfont">&#xe638;</i>
+                    </label>
+                </div>
+            <input type="button" id="sendMsg" value="发送" class="talkSend">
+        </div>
+    </div>
+
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
+
+    /*window.location.href="webSocketTest.html?OtherId="+'6554542';*/
+
+    /*let myId = mystorage(get('userId'));*//*
+    let myId = '4564231';/!*通过mystorage从本地取得*!/*/
+
+
+    (function() {
+    let arg = getQueryString();
+    let otherId = arg['OtherId'];
+    let myId = arg['myId'];
+    console.log(myId);
+    console.log(otherId);
+    let sengMsg = document.getElementById('sendMsg');
+    let container = document.getElementById('container');
+    let talkwords = document.getElementById('talkwords');
+    let chooseImg = document.getElementById('chooseImg');
+    let websocket = null;
+    let websocketUrl= "ws://localhost:8080/Chat_01/"+myId+"#"+otherId;
+    console.log(websocketUrl);
+    //判断当前浏览器是否支持WebSocket
+    if('WebSocket' in window){
+        websocket = new
+        /*地址格式是：主机名+项目名+客户端注明的名称*/
+        WebSocket('ws://localhost:8080/Chat_01');
+    }
+    else{
+        alert('您的浏览器不支持 websocket！')
+    }
+
+    //连接发生错误的回调方法
+    websocket.onerror = function(){
+        alert("error");
+    };
+
+    //连接成功建立的回调方法
+    websocket.onopen = function(event){
+        alert("链接成功,欢迎加入聊天室！");
+    };
+
+    //接收到消息的回调方法
+    /*服务器返回的数据在event里面*/
+    websocket.onmessage = function(event){
+        let htmlFragment;
+        if (event.data.img==undefined){
+        htmlFragment = getOtherMsg(event.data.words,getNowFormatDate());
+        }
+        else {htmlFragment = getOtherImg(event.data.imgSrc,getNowFormatDate())}
+        let addDiv = document.createElement('div');
+        addDiv.innerHTML = htmlFragment;
+        container.appendChild(addDiv);
+    };
+
+    //连接关闭的回调方法
+    websocket.onclose = function(){
+        /*let username=document.getElementById('username').value;
+        setMessageInnerHTML(getNowFormatDate()+" "+username+" 退出了聊天室！");*/
+    };
+
+    //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+    window.onbeforeunload = function(){
+        websocket.close();
+    };
+
+    //将消息显示在网页上
+    /*function setMessageInnerHTML(innerHTML){
+        document.getElementById('message').innerHTML += innerHTML + '';
+    }*/
+
+    //关闭连接
+    function closeWebSocket(){
+        websocket.close();
+    }
+
+    chooseImg.addEventListener('change',function () {
+        let file = chooseImg.files[0];
+        let reads= new FileReader();
+        let getUrl;
+        let formData = new FormData();
+        formData.append('file', file);
+        formData.append('token', otherId);
+        console.log(formData);
+        $.ajax('http://yapi.demo.qunar.com/mock/44319/api/search/allDynamic', {
+            method:'post',
+            data:formData,
+            success:function(obj){
+               console.log(obj.url);
+               getUrl = obj.url;
+            },
+            error:function(){
+                alert(' sdaf');
+            }
+        })
+        console.log(getUrl);
+
+        if(file.type.indexOf("image") == 0){
+            reads.readAsDataURL(file);
+            reads.onload=function (e) {
+                console.log(this.result);
+                /*document.getElementById('portraitPhoto').src=this.result;*/
+                let htmlFragment = getMyImg(this.result,getNowFormatDate());
+                let addDiv = document.createElement('div');
+                addDiv.innerHTML = htmlFragment;
+                container.appendChild(addDiv);
+                let message = {
+                    "send":myId,
+                    "recieive":otherId,
+                    "flag":1,/*1为图片*/
+                    "message":this.result
+                };
+                console.log(message);
+                websocket.send(JSON.stringify(message));/*这里讲得到的图片文件传到后端*/
+            };
+        }
+        else{
+            alert('请放入图片');
+        }
+
+    })
+
+    //发送消息
+    sengMsg.addEventListener('click', function() {
+        console.log(talkwords.value);
+        let htmlFragment = getMyMsg(talkwords.value,getNowFormatDate());
+        let addDiv = document.createElement('div');
+        addDiv.innerHTML = htmlFragment;
+        container.appendChild(addDiv);
+        let message = {
+            "send":myId,
+            "recieive":otherId,
+            "flag":0,/*1为图片*/
+            "message":talkwords.value
+        };
+        console.log(message);
+        websocket.send(JSON.stringify(message));/*这里讲得到的消息传到后端*/
+        /*let username=document.getElementById('username').value;
+        let message = document.getElementById('text').value;
+        websocket.send(getNowFormatDate()+" "+username+"说: "+message+"<br/>");
+        //发送消息后，发送消息框自动清空
+        document.getElementById('text').value="";*/
+        talkwords.value='';
+    });
+
+        function getOtherMsg(msg,time) {
+            let otherMsg ='<div class="timeShow" id="time">'+time+'</div>'+
+            '<div class="talkShow">'+
+            '<div class="userA">'+
+            '<div class="userAImge">'+
+            '<img src="../icon/user.png" width="40px" height="40px">'+
+            '</div>'+
+            '<div class="userATalk">'+
+            '<span id="userASay">'+msg+'</span>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
+
+            return otherMsg;
+        }
+
+        function getOtherImg(src,time) {
+            let otherImg ='<div class="timeShow" id="time">'+time+'</div>'+
+                '<div class="talkShow">'+
+                '<div class="userA">'+
+                '<div class="userAImge">'+
+                '<img src="../icon/user.png" width="40px" height="40px">'+
+                '</div>'+
+                '<div class="userImg">'+
+                '<img src='+src+' style="height:100%;width:100%">'+
+                '</div>'+
+                '</div>'+
+                '</div>';
+
+            return otherImg;
+        }
+
+        function getMyMsg(msg,time) {
+            let myMsg ='<div class="timeShow" id="time">'+time+'</div>'+
+                '<div class="talkShow">'+
+                '<div class="userB">'+
+                '<div class="userBImge">'+
+                '<img src="../icon/user1.png" width="40px" height="40px">'+
+                '</div>'+
+                '<div class="userBTalk">'+
+                '<span id="userBSay">'+msg+'</span>'+
+                '</div>'+
+                '</div>'+
+                '</div>';
+
+            return myMsg;
+        }
+
+        function getMyImg(src,time) {
+            let myImg ='<div class="timeShow" id="time">'+time+'</div>'+
+                '<div class="talkShow">'+
+                '<div class="userB">'+
+                '<div class="userBImge">'+
+                '<img src="../icon/user.png" width="40px" height="40px">'+
+                '</div>'+
+                '<div class="userImg">'+
+                '<img src='+src+' style="height: 100%;width: 100%">'+
+                '</div>'+
+                '</div>'+
+                '</div>';
+
+            return myImg;
+        }
+
+    function getNowFormatDate() {
+        let myDate = new Date();
+        myDate.getYear();        //获取当前年份(2位)
+        myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+        myDate.getMonth();       //获取当前月份(0-11,0代表1月)
+        myDate.getDate();        //获取当前日(1-31)
+        myDate.getDay();         //获取当前星期X(0-6,0代表星期天)
+        myDate.getTime();        //获取当前时间(从1970.1.1开始的毫秒数)
+        myDate.getHours();       //获取当前小时数(0-23)
+        myDate.getMinutes();     //获取当前分钟数(0-59)
+        myDate.getSeconds();     //获取当前秒数(0-59)
+        myDate.getMilliseconds();    //获取当前毫秒数(0-999)
+        myDate.toLocaleDateString();     //获取当前日期
+        let mytime=myDate.toLocaleTimeString();     //获取当前时间
+        return myDate.toLocaleString( );        //获取日期与时间
+    }
+        function getQueryString() {
+            let qs = location.search.substr(1), // 获取url中"?"符后的字串
+                args = {}, // 保存参数数据的对象
+                items = qs.length ? qs.split("&") : [], // 取得每一个参数项,
+                item = null,
+                len = items.length;
+
+            for(let i = 0; i < len; i++) {
+                item = items[i].split("=");
+                let name = decodeURIComponent(item[0]),
+                    value = decodeURIComponent(item[1]);
+                if(name) {
+                    args[name] = value;
+                }
+            }
+            return args;
+        }
+    })()
+</script>
+
+</body>
+</html>

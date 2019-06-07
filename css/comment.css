@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    position: fixed;
+    top:0;
+    height: 5rem;
+    line-height: 5rem;
+    width: 96%;
+    text-align: center;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    padding: 0 1rem;
+    background-color: white;
+    box-shadow: 0 4px 5px -3px  #979797;
+}
+.title div{
+    height: 100%;
+    font-size: 2rem;
+    color: #393636;
+/*    padding: 0.6rem;*/
+    letter-spacing: 0.1rem;
+}
+.title i{
+    font-size:2.5rem;
+    color: #393636;
+}
+.user_img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 3.5rem;
+    overflow: hidden;
+}
+.username{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin: 1rem 0 0 1rem;
+}
+.user_box{
+    display: flex;
+    margin: 6.3rem 1.5rem 1.5rem 1.5rem;
+}
+.comment_title{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+.comment_box{
+    text-align: center;
+    margin: 4.5rem 1.5rem 1.5rem 1.5rem;
+}
+.text{
+    background-color: #EAEAEA;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    color: #393636;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    padding:1.5rem 1.5rem;
+    height: 14rem;
+    width:35.4rem;
+}
+.star{
+    margin: 1.5rem 0;
+}

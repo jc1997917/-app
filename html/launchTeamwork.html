@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>launchTeamwork</title>
+    <link rel="stylesheet" type="text/css" href="../css/launchTeamwork.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <span class="iconfont" style="font-size: 2rem;float: left;" id="return">&#xe6d0;</span>
+        <div class="title">创建合作</div>
+    </div>
+    <div class="img_box">
+        <div class="img">
+            <img src="../icon/img.jpg" style="max-height: 100%;max-width: 100%;">
+        </div>
+    </div>
+    <div class="corporate">
+        <div class="cor_title">
+            <input class="cor_content" type="text" placeholder="请输入你的合作标题 （20字以内）" maxlength="20">
+        </div>
+        <div class="description">
+            <textarea class="cor_description " type="text" placeholder="请输入你对该合作的详细描述（200字以内）" maxlength="200"></textarea>
+        </div>
+        <div class="size">
+            <span>团队规模</span>
+            <select class="select"></select>
+            <span >(10个人以下免费)</span>
+        </div>
+        <div class="begin_time">
+            <span>起始时间</span>
+            <select class="select"></select>
+            <span >年</span>
+            <select class="select"></select>
+            <span >月</span>
+            <select class="select"></select>
+            <span >日</span>
+        </div>
+        <div class="end_time">
+            <span>结束时间</span>
+            <select class="select"></select>
+            <span >年</span>
+            <select class="select"></select>
+            <span >月</span>
+            <select class="select"></select>
+            <span >日</span>
+        </div>
+        <div class="files">
+            <span>相关文档</span>
+            <div class="button">
+                <div class="upload">点击上传文件</div>
+                <div style="margin: 0 0.5rem 0 2rem;color: #31c163">上传成功</div>
+                <span class="iconfont" style="color: #31c163">&#xe6fb;</span>
+            </div>
+        </div>
+        <div class="label_box">
+            <span style=" font-size: 1.4rem;letter-spacing: 0.1rem; color: #393636;">选择合作标签</span>
+            <div class="label-container" id="label-container" style="display:flex;flex-flow:row wrap">
+                <div class="label" id="1">减振降噪</div>
+                <div class="label" id="2">新材料应用</div>
+                <div class="label" id="3">传感器</div>
+                <div class="label" id="4">绿色能源</div>
+                <div class="label" id="5">射频技术</div>
+                <div class="label" id="6">人工智能</div>
+                <div class="label" id="7">流体机械</div>
+                <div class="label" id="8">水处理技术</div>
+                <div class="label" id="9">食品技术</div>
+                <div class="label" id="10">制冷系统设计</div>
+                <div class="label" id="11">燃烧技术</div>
+                <div class="label" id="12">空气净化技术</div>
+                <div class="label" id="13">机械结构设计</div>
+                <div class="label" id="14">加热技术</div>
+            </div>
+        </div>
+        <div class="launch" id="launch">创建合作</div>
+    </div>
+</div>
+<script src="../Distpicker/js/distpicker.data.js"></script>
+<script src="../js/return.js"></script>
+<script src="../js/launch_work.js"></script>
+</body>
+</html>

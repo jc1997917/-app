@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+html{
+    font-size: 10px;
+}
+.status-bar{
+    width:100%;
+    height:2.75rem;
+    background-color: #eaeaea;
+}
+.head{
+    margin:1rem 1rem;
+}
+
+
+.content{
+    margin:0 1rem;
+}
+
+.huiDa{
+    color: #060606;
+    font-size: 1.8rem
+}
+
+#submitBtn{
+    float:right;
+    color: #1296DB;
+    font-size: 1.5rem
+}

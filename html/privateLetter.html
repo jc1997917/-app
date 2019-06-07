@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>privateLetter</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/privateLetter.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+</head>
+<body>
+<div class="top">
+    <!--顶部标题-->
+    <div class="left">
+        <div class="arrow">
+            <img src="../icon/arrow.png"  width="16px" height="16px">
+        </div>
+        <div class="title"><h2>用户昵称或备注</h2></div>
+    </div>
+    <div class="right"><span>向他付费咨询</span></div>
+</div>
+<div class="divideLine"></div>
+<!--聊天内容显示-->
+<div class="middle">
+    <div class="timeShow" id="userATime">12:30</div>
+    <div class="talkShow">
+        <div class="userA">
+            <div class="userAImge">
+                <img src="../icon/user.png" width="40px" height="40px">
+            </div>
+            <div class="userATalk">
+                <span id="userASay">吃饭了吗？</span>
+            </div>
+        </div>
+    </div>
+    <div class="timeShow" id="userBTime">12:33</div>
+    <div class="talkShow">
+        <div class="userB">
+            <div class="userBImage">
+                <img src="../icon/user1.png " width="40px" height="40px">
+            </div>
+            <div class="userBTalk">
+                <span id="userBSay">还没呢，你呢？</span>
+            </div>
+        </div>
+
+</div>
+</div>
+<!--聊天输入框-->
+
+<div class="bottom">
+    <div class="divideLine"></div>
+    <div class="input">
+        <div class="left">
+            <div class="voice"><i class="iconfont">&#xe8d1;</i></div>
+            <input type="text" class="talkWord" id="talkwords">
+        </div>
+       <div class="right">
+           <div class="emoji"><i class="iconfont">&#xe666;</i></div>
+           <input type="button" value="发送" class="talkSend">
+       </div>
+    </div>
+
+</div>
+</body>
+</html>

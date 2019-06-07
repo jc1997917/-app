@@ -1,0 +1,92 @@
+.title{
+    height: 2rem;
+    width: 94%;
+    text-align: center;
+    display:flex;
+    justify-content:space-between;
+   padding: 1.5rem 1.5rem;
+    position:fixed;
+    top:0;
+    background-color: white;
+    box-shadow: 0 4px 5px -3px  #979797;
+}
+.title div{
+    height: 100%;
+    font-size: 2rem;
+    color: #393636;
+    letter-spacing: 0.1rem;
+}
+.title i{
+    font-size:2rem;
+    color: #393636;
+}
+/*.divide-shadow{
+    position: fixed;
+    top:5rem;
+    background-color: #eaeaea;
+    height: 1px;
+    width: 100%;
+}*/
+.summary{
+    font-size: 1.4rem ;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+.answer_history,.essay_history,.question_history{
+    box-shadow: #EAEAEA 0 0 20px 1px ;
+    padding:1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+.content{
+    margin: 6.5rem 1.5rem 1.5rem 1.5rem;
+}
+.head{
+    display: flex;
+    height: 4rem;
+    line-height: 4rem;
+}
+.text_content{
+    margin-left: 1rem;
+}
+.text_title{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.description{
+    font-size: 1.5rem;
+    color: #979797;
+    letter-spacing: 0.1rem;
+    display: flex;
+    margin-top: 1rem;
+}
+.description_img{
+    height: 4rem;
+    width: 15rem;
+    overflow: hidden;
+}
+.dynamcis{
+    color: #979797;
+    margin: 1rem 0 0 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+.text{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #979797;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+}
+.text_box{
+    display: flex;
+    flex-direction: row;
+}
+.no_more{
+    text-align: center;
+    color: #979797;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}

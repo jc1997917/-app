@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>DEMO1</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <style>
+        .label{
+            margin:0.8rem 0.6rem 0 0.6rem;
+            border:0.1rem solid #707070;
+            border-radius: 0.5rem;
+            font-size:1.4rem;
+            text-align:center;
+            color: #707070;
+            background-color: #FFFFFF
+        }
+        .active{
+            margin:0.8rem 0.6rem 0 0.6rem;
+            border:0.1rem solid #707070;
+            border-radius: 0.5rem;
+            font-size:1.4rem;
+            text-align:center;
+            color: #707070;
+            background-color: #FDE155
+        }
+    </style>
+</head>
+<body>
+<div class="title-container">
+<div class="technical-icon" style="height:2.1rem;width: 2.1rem;display: inline-block">
+    <img src="../icon/technical-label.png" style="height: 100%;width: 100%">
+</div>
+<div class="technical-title" style="font-size: 1.6rem;color: #060606;display: inline-block">我关注的工业技术</div>
+    <hr>
+</div>
+<div class="label-container" id="label-container" style="display:flex;flex-flow:row wrap">
+<div class="label" name="label" id="1">减振降噪</div>
+<div class="label" name="label" id="2">新材料应用</div>
+<div class="label" name="label" id="3">传感器</div>
+<div class="label" name="label" id="4">绿色能源</div>
+<div class="label" name="label" id="5">射频技术</div>
+<div class="label" name="label" id="6">人工智能</div>
+<div class="label" name="label" id="7">流体机械</div>
+<div class="label" name="label" id="8">水处理技术</div>
+<div class="label" name="label" id="9">食品技术</div>
+<div class="label" name="label" id="10">制冷系统设计</div>
+<div class="label" name="label" id="11">燃烧技术</div>
+<div class="label" name="label" id="12">空气净化技术</div>
+<div class="label" name="label" id="13">机械结构设计</div>
+<div class="label" name="label" id="14">加热技术</div>
+</div>
+<script>
+    (function() {
+        let divs = document.getElementById('label-container').querySelectorAll('div');
+        let list = []; //数组刚开始初始化好,list里面放的是被选中标签的id
+
+        for(let i = 0; i < divs.length; i ++) {
+            divs[i].addEventListener('click', function() {
+                if(this.classList.contains('active') === true){
+                    //已选中，去除选中效果
+                    this.classList.remove('active');
+                    let index = list.indexOf(this.id);
+                    console.log(this);
+                    if( index > -1) {
+                        list.splice(index, 1);
+                    }
+                    console.log(list);
+                } else {
+                    //未选中，添加选中效果
+                    list.push(this.id);
+                    this.classList.add('active');
+                    console.log(list);
+                }
+            }, false);
+        }
+    })(window)
+</script>
+</body>
+</html>

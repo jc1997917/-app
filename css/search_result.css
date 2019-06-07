@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.search-box{
+     width:100%;
+     height:5rem;
+     display: inline-block;
+     text-align: center;
+     line-height:5.17rem;
+     position:fixed;
+     top:0;
+     background-color: white;
+     box-shadow: 0 4px 5px -3px  #979797;
+ }
+.search_button{
+    position:fixed;
+    top: 1.55rem;
+    right:2.4rem;
+    height: 2rem;
+    line-height: 2rem;
+    border:0;
+    background-color: #e9e9e9;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+.input{
+    width:74%;
+    height: 2rem;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    border:1px solid #cccccc;
+    outline:none;
+    padding:0.5rem 4rem 0.5rem 3rem;
+    position:relative;
+    font-size:1.3rem;
+    letter-spacing: 0.1rem;
+}
+.iconfont{
+    font-size: 1.8rem !important;
+
+}
+.searchSign{
+    width: 10%;
+    position:fixed;
+    left:1.2rem;
+    top:0;
+}
+.divide_line{
+    position:fixed;
+    top: 1.45rem;
+    right:6rem;
+    width:1px;
+    height: 2rem;
+    background-color: #979797;
+}
+.reminder{
+    font-size: 1.4rem;
+    height:1.4rem;
+    background-color: #EAEAEA;
+    padding:0.8rem 1.5rem;
+    color: #979797;
+    margin-top: 5rem;
+}
+.text_box{
+    margin:1.5rem;
+}
+.divide-shadow{
+    width:100%;
+    height:0.7rem;
+    background-color: #ededed;box-shadow: 0.3rem 0.3rem 0.3rem #cccccc;
+}
+.title{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    margin:1rem 0;
+}
+.text{
+    color: #595757;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height:2rem;
+    margin-left: 1rem;
+}
+.left{
+    width:68%;
+}
+.right{
+    width: 30%;
+    text-align: center;
+    height: 8rem;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    margin:1.5rem;
+}
+.dynamcis{
+    color: #979797;
+    margin: 0.5rem 0.5rem 0 1rem;
+}
+.recommendImg{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.divide_shadow{
+    width:100%;
+    height:0.7rem;
+    background-color: #e9e9e9;
+}
+

@@ -1,0 +1,97 @@
+.title{
+    height: 2rem;
+    width: 94%;
+    position:fixed;
+    top:0;
+    background-color: white;
+    text-align: center;
+    display:flex;
+    padding: 1.5rem 1.5rem;
+}
+.title i{
+    font-size: 1.8rem;
+    color: #393636;
+}
+.title span{
+    height: 100%;
+    font-size: 1.8rem;
+    color: #393636;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-left:1.5rem;
+}
+.viceTitle{
+    height: 1.5rem;
+    width: 94%;
+    padding:1rem 1.5rem;
+    background-color: white;
+    display:flex;
+    justify-content: space-around;
+    position:fixed;
+    top:5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #979797;
+    box-shadow: 0 4px 5px -3px  #979797;
+}
+.signalLine{
+    height: 2px;
+    width:20%;
+    background-color: #000000;
+    position:fixed;
+    top:8.3rem;
+    left:17%;
+}
+.content{
+    margin:10rem 1.5rem 1.5rem 1.5rem;
+}
+.information_box{
+    width:65%;
+    float:left;
+    margin:0.5rem 1.5rem;
+}
+.follow_button{
+    float:right;
+    background-color: #e9e9e9;
+   padding: 0.4rem 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #979797;
+    border-radius:0.6rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+.user_img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 3.5rem;
+    overflow: hidden;
+    float: left;
+}
+.user{
+    margin:1.5rem 0;
+    height: 4rem;
+}
+.username{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #393636;
+}
+.user_information{
+    color: #979797;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+.divide_line{
+    height: 1px;
+    width:100%;
+    background-color: #eaeaea;
+}
+.no_more{
+    text-align: center;
+    color: #979797;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}

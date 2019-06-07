@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>message</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/message.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/bottomNav.css"/>
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="title">
+        <span><strong>消息</strong></span>
+        <div class="messageSign"><i class="iconfont" style="font-size: 2rem">&#xe620;</i></div>
+    </div>
+    <div class="divide_line"></div>
+    <div class="divideShadow"></div>
+    <!--消息提示栏-->
+    <div class="middle" id="letterList">
+        <div class="left">
+            <span class="iconfont" style="font-size: 3rem; color: #1296db;">&#xe67c;</span>
+        </div>
+        <div class="center">
+            <div class="privateLetter">私信</div>
+            <div class="dynamcis">您的好友<span class="who">小清欢</span>给您发来私信</div>
+        </div>
+        <div class="right">
+            <span class="iconfont" style="color: #393636;font-size: 2rem;">&#xe651;</span>
+        </div>
+    </div>
+    <div class="divide_shadow"></div>
+    <div class="list">通知列表</div>
+    <!--消息列表-->
+    <div class="message_list">
+        <!--我收到的赞-->
+        <!--<div class="box">
+                <div class="praise">
+                    <span class="iconfont" style="font-size: 1.8rem;color: #ffffff;">&#xe609;</span>
+                </div>
+            <div class="receive">我收到的赞</div>
+                <div class="my_receive">
+                    <span class="praise_number" style="color: white;font-size: 1.3rem">1</span>
+                </div>
+            <div class="return"><span class="iconfont" style="font-size: 2rem;">&#xe651;</span></div>
+        </div>
+        <div class="line"></div>-->
+        <!--我收到的评论-->
+        <div class="box" id="comment">
+                <div class="comment">
+                    <span class="iconfont" style="font-size: 2.2rem;color: #ffffff;">&#xe7ed;</span>
+                </div>
+            <div class="receive">我收到的评论</div>
+                <div class="my_receive">
+                    <span class="comment_number" style="color: white;font-size: 1.3rem">6</span>
+                </div>
+            <div class="return"><span class="iconfont" style="font-size: 2rem;">&#xe651;</span></div>
+        </div>
+        <div class="line"></div>
+        <!--我收到的邀请-->
+        <div class="box" id="invite">
+                <div class="invite">
+                    <span class="iconfont" style="font-size: 2.4rem;color: #ffffff;">&#xe6ff;</span>
+                </div>
+            <div class="receive">我收到的邀请</div>
+                <div class="my_receive">
+                    <span class="invite_number"  style="color: white;font-size: 1.3rem">5</span>
+                </div>
+            <div class="return"><span class="iconfont"  style="font-size: 2rem;">&#xe651;</span></div>
+        </div>
+        <div class="line"></div>
+        <!--我收到的回答-->
+        <div class="box" id="reply">
+                <div class="reply">
+                    <span class="iconfont" style="font-size: 2rem;color: #ffffff;">&#xe628;</span>
+                </div>
+            <div class="receive">我收到的回答</div>
+                <div class="my_receive">
+                    <span class="reply_number"  style="color: white;font-size: 1.3rem">21</span>
+                </div>
+            <div class="return"><span class="iconfont" style="font-size: 2rem;">&#xe651;</span></div>
+        </div>
+        <div class="line"></div>
+        <!--我收到的咨询-->
+        <div class="box" id="consult">
+                <div class="consult">
+                    <span class="iconfont" style="font-size: 2.2rem;color: #ffffff;">&#xe656;</span>
+                </div>
+            <div class="receive">我收到的咨询</div>
+                <div class="my_receive">
+                    <span class="consult_number" style="color: white;font-size: 1.3rem">8</span>
+                </div>
+            <div class="return"><span class="iconfont" style="font-size: 2rem;">&#xe651;</span></div>
+        </div>
+        <div class="line"></div>
+        <!--系统消息-->
+        <div class="box" id="systemInformation">
+                <div class="system_information">
+                    <span class="iconfont"  style="font-size: 2.2rem;color: #ffffff;">&#xe7f0;</span>
+                </div>
+            <div class="receive">系统消息</div>
+                <div class="my_receive">
+                    <span class="system_information_number" style="color: white;font-size: 1.3rem">4</span>
+                </div>
+            <div class="return"><span class="iconfont" style="font-size: 2rem;">&#xe651;</span></div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <!--底部导航栏-->
+    <div class="bottom_box">
+        <div class="bottom" id="bottom">
+            <div class="home_box">
+                <div class="home_img">
+                    <span class="iconfont bottomIcon">&#xe644;</span>
+                </div>
+                <div class="home bottomWord">首页</div>
+            </div>
+            <div class="find_box">
+                <div class="find_img">
+                    <span class="iconfont bottomIcon">&#xe64b;</span>
+                </div>
+                <div class="find bottomWord" >发现</div>
+            </div>
+            <div class="ask_box">
+                <div class="ask">
+                    <span class="my_ask" style="color: white"><h2 style="margin-top: 0.3rem">问</h2></span>
+                </div>
+            </div>
+            <div class="message_box  active">
+                <div class="message_img">
+                    <span class="iconfont bottomIcon">&#xe64c;</span>
+                </div>
+                <div class="messages bottomWord">消息</div>
+            </div>
+            <div class="my_box">
+                <div class="my_img">
+                    <span class="iconfont bottomIcon">&#xe64d;</span>
+                </div>
+                <div class="my bottomWord">我的</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../js/bottom.js"></script>
+<script src="../js/bottomSlideControl.js"></script>
+<script src="../js/message.js"></script>
+</body>
+</html>

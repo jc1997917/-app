@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+.top{
+    width: 100%;
+    display:flex;
+    padding:1rem 1.5rem;
+    position: fixed;
+    top:0;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 5px -3px  #979797;
+}
+.title{
+    height: 2.7rem;
+    line-height:  2.7rem;
+    font-size:  1.8rem;
+    letter-spacing: 0.1rem;
+    margin-left: 1.5rem;
+    width: 76%;
+}
+.next{
+    height: 2.7rem;
+    line-height:  2.7rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: #1296db;
+}
+.question_box{
+    margin: 7.2rem 1.5rem 1.5rem 1.5rem;
+}
+.question_content{
+    border: none;
+    border-bottom: 1px solid #1296db;
+    width: 100%;
+    padding:0.5rem 1rem;
+    outline: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.question_description{
+    border:1px solid #1296db;
+    resize: none;
+    height: 12rem;
+    width: 100%;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    padding:0.5rem 1rem;
+    outline: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.label_box{
+    margin: 1.5rem;
+}
+.label_title{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    margin-left: 3rem;
+}
+.divide_line{
+    height: 1px;
+    width: 100%;
+    background-color: #EAEAEA;
+    margin: 1rem 0;
+}
+.label-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.label{
+    border:0.1rem solid #979797;
+    font-size: 1.6rem;
+    text-align:center;
+    color: #707070;
+    letter-spacing: 0.1rem;
+    padding:0.2rem 0.5rem;
+    border-radius: 0.4rem;
+    margin: 0.5rem 0;
+}
+.bottom{
+    margin: 1.5rem;
+}
+.option{
+    display: flex;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #EAEAEA;
+    margin: 0.5rem 0;
+}
+.reward_title{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.reward_number{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.reward{
+    border:1px solid #1296db;
+    outline: none;
+    padding:0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    color: #1296db;
+    background-color: white;
+    margin: 0.5rem 1rem;
+}
+
+.rewardActive{
+    background-color: #1296db;
+    color: #FFFFFF;
+}
+
+.active{
+    padding:0.2rem 0.5rem;
+    border:0.1rem solid #707070;
+    border-radius: 0.4rem;
+    font-size:1.6rem;
+    text-align:center;
+    color: #707070;
+    background-color: #FDE155
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>check_answer</title>
+    <link rel="stylesheet" type="text/css" href="../css/check_answer.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+<div class="box">
+    <!--搜索框-->
+    <div class="search-box">
+        <input id="searchContent" class="input" type="text" placeholder="请输入关键字">
+        <div class="iconfont" id="return"><span class="searchSign">&#xe6d0;</span></div>
+        <div class="search_button" id="search_button">搜索</div>
+        <div class="divide_line"></div>
+    </div>
+    <div class="line"></div>
+    <div class="content">
+        <div class="label_box">
+            <div class="label">新材料应用</div>
+            <div class="label">食品技术</div>
+            <div class="label">空气净化技术</div>
+        </div>
+        <div class="question">
+            <div class="title" ><strong>厉害的人是怎么分析问题的？</strong></div>
+            <div class="release"><span id="release_time">发布于20分钟前</span>&nbsp&nbsp<span id="answer_number">54</span>条回答</div>
+            <div class="divideLine"></div>
+            <div class="middle">
+                <div class="invite">
+                    <div class="iconfont" style="font-size: 1.5rem;margin: 1rem 0;color: #393636">&#xe8cc;</div>
+                    <p style="margin:1.2rem 0.5rem;font-size:1.3rem;color: #393636;letter-spacing: 0.1rem;"><strong>邀请回答</strong></p>
+                </div>
+                <div class="divide_Line"></div>
+                <div class="write_answer" id="write_answer">
+                    <div class="iconfont" style="font-size: 1.5rem;margin: 1rem 0;color: #393636">&#xe628;</div>
+                    <p style="margin:1.2rem 0.5rem;font-size:1.3rem;color: #393636;letter-spacing: 0.1rem;"><strong>添加回答</strong></p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="select">
+            <span>只看他的回答</span>
+            <select class="select_box">
+                <option value="个人">个人</option>
+                <option value="专家">专家</option>
+                <option value="企业">企业</option>
+            </select>
+        </span>
+    </div>
+    <div class="answer_box">
+        <div class="user">
+            <div class="user_picture">
+                <img src="../icon/user3.jpg" style="width:100%;height:100%;">
+            </div>
+            <div class="username">Adey</div>
+        </div>
+        <div>
+            <span class="answer" id="answer1">分析问题最强的可能是科研人，因为若做不到，再努力尝试也无法取得任何进展。</span>
+        </div>
+        <div style=" margin-top:1rem;"><span class="answer_time">4个小时前</span></div>
+    </div>
+    <div class="divide_shadow"></div>
+    <div class="answer_box">
+        <div class="user">
+            <div class="user_picture">
+                <img src="../icon/pic4.jpg" style="width:100%;height:100%;">
+            </div>
+            <div class="username">阿萨德</div>
+        </div>
+        <div>
+            <span class="answer" id="answer2">作为职场小白，我认为厉害的人分析问题不能够理性思考来绑架感性体验，这也是我目前努力想做到的分析问题的方法。</span>
+        </div>
+        <div style=" margin-top:1rem;"><span class="answer_time">12个小时前</span></div>
+    </div>
+    <div class="divide_shadow"></div>
+    <div class="answer_box">
+        <div class="user">
+            <div class="user_picture">
+                <img src="../icon/pic2.jpg" style="width:100%;height:100%;">
+            </div>
+            <div class="username">张托米</div>
+        </div>
+        <div>
+            <span class="answer" id="answer3">我们是靠学得的知识来解决问题，但这个过程中不管你怎么努力，其实都有空间和时间复杂度的限制，分解问题方式直接决定了问题是否能被解决。</span>
+        </div>
+        <div style=" margin-top:1rem;"><span class="answer_time">7个小时前</span></div>
+    </div>
+<div class="divide_shadow"></div>
+<div class="answer_box">
+    <div class="user">
+        <div class="user_picture">
+            <img src="../icon/user4.jpg" style="width:100%;height:100%;">
+        </div>
+        <div class="username">L军</div>
+    </div>
+    <div>
+        <span class="answer" id="answer4">为什么知识一定可用简单的语言描述为什么当你分解错问题后，再努力也解决不了可以用什么工具来帮助你拆分问题</span>
+    </div>
+    <div style=" margin-top:1rem;"><span class="answer_time">9个小时前</span></div>
+</div>
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../js/checkAnswer.js"></script>
+<script src="../js/return.js"></script>
+</body>
+</html>

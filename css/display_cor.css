@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.title{
+    height: 2rem;
+    width: 94%;
+    position:fixed;
+    top:0;
+    background-color: #FFFFFF;
+    text-align: center;
+    display:flex;
+    padding: 1.5rem 1.5rem;
+
+    /*  background: -webkit-linear-gradient(left top,#409eff ,#b2daef);
+      background: -o-linear-gradient(bottom right, #409eff, #b2daef);
+      background: -moz-linear-gradient(bottom right, #409eff, #b2daef);
+      background: linear-gradient(to bottom right, #409eff , #b2daef);*/
+}
+.title i{
+    font-size: 1.8rem;
+    color: #393636;
+}
+.title span{
+    height: 100%;
+    font-size: 2rem;
+    color: #393636;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-left:1rem;
+}
+.divide_line{
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 0.1rem;
+    position: fixed;
+    top: 5rem;
+    box-shadow: 0 4px 5px -3px  #EAEAEA;
+}
+.launch_img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 0.5rem;
+}
+.top{
+    display:flex;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #393636;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 6.5rem 1.5rem 1.5rem 1.5rem;
+}
+.label{
+    background-color: #EAEAEA;
+    padding:0.4rem 0.5rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    color: #979797;
+    box-shadow: #d0d0d0 0 0 20px 1px inset;
+}
+.text{
+    margin: 1.5rem;
+}
+.text p{
+    text-indent:1em;
+}
+.text_title{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: #393636;
+    margin: 1rem 0;
+}
+.inset_img{
+  /*  height: 22rem;
+    width:35rem;*/
+    overflow: hidden;
+    text-align: center;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+.text_content{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    color: #393636;
+}
+.dynamcis{
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    color: #979797;
+    margin: 1rem 0 5.5rem 0;
+}
+.bottom{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 4.5rem;
+    width: 100%;
+}
+.member_number{
+    width: 50%;
+    background-color: #FFFFFF;
+    border-top: 0.1rem solid #EAEAEA;
+    color: #979797;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    line-height: 4.5rem;
+}
+.apply{
+    width: 50%;
+    background-color: #1296db;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    line-height: 4.5rem;
+}

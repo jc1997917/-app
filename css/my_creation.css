@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+html{
+    font-size: 10px;
+}
+.status-bar{
+    width:100%;
+    height:2.75rem;
+    background-color: #eaeaea;
+}
+.top{
+    align-content: center;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+.title{
+    margin:0 auto;
+    height: 40px;
+    width: 20%;
+}
+.arrow{
+    float:left;
+    display:table-cell;
+    vertical-align:middle;
+    margin-left: 1rem;
+}
+.divide_line{
+    height: 1px;
+    width:100%;
+    background-color: #b4b4b4;
+    margin-bottom: 1rem;
+}
+.creation_answer,.creation_essay{
+    margin:1rem;
+}
+.text_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dynamcis{
+    float:right;
+    color:#979797;
+    margin-bottom: 1rem;
+}
+.text{
+    margin:0.5rem 1rem;
+}
+.line{
+    height: 1px;
+    background-color: #c8c8c8;
+    margin:2rem 0 ;
+}

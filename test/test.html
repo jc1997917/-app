@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		div {
+			float: left;
+			margin-right: 20px;
+			width: 100px;
+			height: 100px;
+			background-color: #eee;
+		}
+		div.active {
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="1" class="active"></div>
+	<div id="2"></div>
+	<div id="3"></div>
+	<div id="4"></div>
+	<script>
+		(function() {
+			let divs = document.querySelectorAll('div');
+			let list = []; //数组刚开始初始化好
+            console.log(this);
+
+			for(let i = 0; i < divs.length; i ++) {
+				divs[i].addEventListener('click', function() {
+					if(this.classList.contains('active') === true){
+						//已选中，去除选中效果
+						this.classList.remove('active')
+						let index = list.indexOf(this.id)
+						if( index > -1) {
+							list.splice(index, 1)
+						}
+						console.log(list ,'remove')
+					} else {
+						//未选中，添加选中效果
+						list.push(this.id)
+						this.classList.add('active')
+						console.log(list, 'add')
+					}
+				}, false);
+			}
+		})(window)
+	</script>
+	
+</body>
+</html>

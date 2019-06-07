@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>show</title>
+</head>
+<body>
+
+<div id="container" style="margin: 10px"></div>
+
+<script src="../jquery.min.js"></script>
+<script>
+    let container = document.getElementById('container');
+    $.ajax('http://yapi.demo.qunar.com/mock/44319/api/search/allDynamic', {
+        method: 'post',
+        data: {
+            awerId:45646545623,
+        },
+        success: function (obj) {
+            console.log(1);
+            container.innerHTML = obj.data.content;/*讲之前发过来的content传回来*/
+        },
+
+        error: function () {
+            console.log('失败');
+        }
+    });
+
+</script>
+
+</body>
+</html>

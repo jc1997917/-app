@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    width: 100%;
+    position:fixed;
+    top:0;
+
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding:1.5rem;
+    background-color: white;
+    box-shadow: 0 4px 5px -3px  #979797;
+    display: flex;
+}
+.letter_list{
+    margin-top: 7.2rem;
+}
+.letter_box{
+    margin: 2rem;
+    display:flex;
+}
+.user_img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4rem;
+    overflow: hidden;
+}
+.user_information{
+    margin:0 1rem;
+}
+.username{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.letter_content{
+    width:27rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    color: #979797;
+}
+.letter_number{
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    background-color: red;
+    text-align: center;
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+.arrow{
+    margin-right:2rem;
+}
+.return{
+    margin: auto;
+}
+.divide_line{
+    height: 0.1rem;
+    width: 100%;
+    background-color: #EAEAEA;
+}

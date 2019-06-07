@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>allComments</title>
+    <link rel="stylesheet" type="text/css" href="../css/allComments.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+<div class="content" style="margin-bottom: 7rem;">
+    <div class="all_comments">
+        <div class="comment_title">
+            <div class="close" style="margin-right: 1rem">
+                <span class="iconfont">&#xe623;</span>
+            </div>
+            <div>全部 <span class="comment_number">8</span> 条评论</div>
+        </div>
+        <div class="Comment">
+            <div class="comment_user">
+                <img src="../icon/user1.jpg"  style="max-height: 100%;max-width: 100%;border-radius: 50%">
+            </div>
+            <div class="comment_box">
+                <div class="title">
+                    <div class="comment_username">红永全</div>
+                    <div class="praise">
+                        <span class="iconfont" style="font-size: 1.4rem;color: #797979;">&#xe609;</span>
+                        <span class="praise_number" style="font-size: 1.2rem;color: #797979;">123</span>
+                    </div>
+                </div>
+                <div class="comment_text">
+                    很全面，赞一个。
+                </div>
+            </div>
+            <div class="childComment">
+                <div class="comment_user">
+                    <img src="../icon/user5.jpg"  style="max-height: 100%;max-width: 100%;border-radius: 50%">
+                </div>
+                <div class="comment_box">
+                    <div class="title">
+                        <div class="comment_username">李栓蛋</div>
+                        <div class="praise">
+                            <span class="iconfont" style="font-size: 1.4rem;color: #797979;">&#xe609;</span>
+                            <span class="praise_number" style="font-size: 1.2rem;color: #797979;">15</span>
+                        </div>
+                    </div>
+                    <div class="comment_text">
+                        同赞同赞。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divide-line"></div>
+        <div class="Comment">
+            <div class="comment_user">
+                <img src="../icon/user7.jpg"  style="max-height: 100%;max-width: 100%;border-radius: 50%">
+            </div>
+            <div class="comment_box">
+                <div class="title">
+                    <div class="comment_username">灵魂守卫</div>
+                    <div class="praise">
+                        <span class="iconfont" style="font-size: 1.4rem;color: #797979;">&#xe609;</span>
+                        <span class="praise_number" style="font-size: 1.2rem;color: #797979;">54</span>
+                    </div>
+                </div>
+                <div class="comment_text">
+                    正好了解下！
+                </div>
+            </div>
+        </div>
+        <div class="divide-line"></div>
+        <div class="Comment">
+            <div class="comment_user">
+                <img src="../icon/user6.jpg"  style="max-height: 100%;max-width: 100%;border-radius: 50%">
+            </div>
+            <div class="comment_box">
+                <div class="title">
+                    <div class="comment_username">全栈工程师</div>
+                    <div class="praise">
+                        <span class="iconfont" style="font-size: 1.4rem;color: #797979;">&#xe609;</span>
+                        <span class="praise_number" style="font-size: 1.2rem;color: #797979;">33</span>
+                    </div>
+                </div>
+                <div class="comment_text">
+                    说的很棒！
+                </div>
+            </div>
+        </div>
+        <div class="divide-line"></div>
+        <div class="Comment">
+            <div class="comment_user">
+                <img src="../icon/user2.jpg"  style="max-height: 100%;max-width: 100%;border-radius: 50%">
+            </div>
+            <div class="comment_box">
+                <div class="title">
+                    <div class="comment_username">代码人</div>
+                    <div class="praise">
+                        <span class="iconfont" style="font-size: 1.4rem;color: #797979;">&#xe609;</span>
+                        <span class="praise_number" style="font-size: 1.2rem;color: #797979;">23</span>
+                    </div>
+                </div>
+                <div class="comment_text">
+                    不知何时才会实现人真正智能的 目前的大部分机器学习，AI都是基于统计和概率
+                </div>
+            </div>
+        </div>
+        <div class="divide-line"></div>
+</div>
+    <div class="Comment">
+        <div class="comment_user">
+            <img src="../icon/user4.jpg"  style="max-height: 100%;max-width: 100%;border-radius: 50%">
+        </div>
+        <div class="comment_box">
+            <div class="title">
+                <div class="comment_username">javis</div>
+                <div class="praise">
+                    <span class="iconfont" style="font-size: 1.4rem;color: #797979;">&#xe609;</span>
+                    <span class="praise_number" style="font-size: 1.2rem;color: #797979;">13</span>
+                </div>
+            </div>
+            <div class="comment_text">
+                这个都会，可以架构了。
+            </div>
+        </div>
+    </div>
+    <div class="divide-line"></div>
+    <div class="no_more">没有更多评论了  </div>
+</div>
+    <div class="bottom">
+        <div class="search-box">
+            <div class="emoji">
+                <span class="iconfont" style="font-size: 2.5rem;color: #979797;">&#xe666;</span>
+            </div>
+            <input id="searchContent" class="input" type="text" placeholder="请输入关键字">
+            <div class="search_button">发布</div>
+            <div class="divide_line"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        document.getElementsByClassName('close')[0].addEventListener('click',function () {
+            window.history.back(-1);
+        });
+    })()
+</script>
+
+</body>
+</html>

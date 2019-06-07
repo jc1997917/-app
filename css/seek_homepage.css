@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    height: 3.7rem;
+    width: 38.5rem;
+    padding:1.5rem;
+    display:flex;
+    box-shadow: #979797 0 -4px 5px 4px;
+    margin-bottom: 1.5rem;
+    position:fixed;
+    top:0;
+    background-color: #FFFFFF;
+}
+.user_img{
+    height: 3.5rem;
+    width: 3.5rem;
+    overflow: hidden;
+    border-radius: 3rem;
+}
+.top_content{
+    width:70%;
+    margin-left: 1rem;
+}
+.grant_membership{
+    display:flex;
+}
+.membership{
+    font-size: 1.6rem;
+    color: #FED06D;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+.search{
+    height: 1.8rem;
+    margin: 1.5rem 0 0 5.5rem;
+}
+.advertisement_box{
+    margin-top:8.2rem;
+}
+.advertisement{
+    height:12rem ;
+    width:36rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+.signal{
+    display: flex;
+    justify-content: center;
+}
+.node{
+    height: 0.6rem;
+    width:0.6rem;
+    border-radius: 0.8rem;
+    background-color: #979797;
+    margin:-1.5rem 0.3rem ;
+}
+.middle{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 3.5rem;
+    height: 5.2rem;
+}
+.img_box1{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    background-color: #1296db;
+    border-radius: 3.5rem;
+}
+.img_box2{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 3.5rem;
+    background-color: #9c6f58;
+}
+.paid_consult{
+    margin-top: 0.1rem;
+}
+.consult{
+    margin-top:0.3rem;
+}
+.community{
+    margin-top: 0.3rem;
+}
+.online_class{
+    margin-top: 0.2rem;
+}
+.divide_line{
+    height: 0.1rem;
+    width: 100%;
+    background-color: #eaeaea;
+}
+.title{
+    margin-left:1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.class{
+    display: flex;
+    margin: 1.5rem 2rem;
+}
+.class_information{
+    margin-left:1.5rem;
+    width:65%;
+}
+.cover{
+    height: 6.66rem;
+    width: 5rem;
+    overflow: hidden;
+}
+.class_price{
+    margin:1.5rem  0.5rem 0 0.5rem;
+}
+.price{
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    padding:0.3rem 0.8rem;
+    text-align: center;
+    background-color: #1296db;
+    border-radius: 0.6rem;
+}
+.count{
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    color: red;
+    margin-top: 0.5rem;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #EAEAEA;
+}
+.change{
+    text-align: right;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color:#979797;
+    margin: 1.5rem 2rem -1rem 0;
+}
+.user_box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.user{
+    border:1px solid #979797;
+    box-shadow: #EAEAEA 0 0 20px 1px inset;
+    width:32%;
+    padding:1.5rem;
+    margin: 1.5rem 2rem;
+    border-radius: 4px;
+}
+.user_img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 20px;
+    overflow:hidden;
+    margin:0 auto;
+}
+.userName{
+    font-size: 1.5rem;
+    color: #393636;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0;
+}
+.level{
+    background-color: #ffd16e;
+    color:white;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    width: 6rem;
+    padding:0.3rem 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+}
+.userDescription{
+    font-size: 1.2rem;
+    color: #393636;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0;
+}
+.send_invite{
+    background-color: #1296db;
+    color:white;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    width: 9rem;
+    padding:0.3rem 0.5rem;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}

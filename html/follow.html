@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>follow</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/follow.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/bottomNav.css"/>
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="top">
+        <!--搜索框1-->
+        <div class="search-box">
+            <input id="searchContent" class="input" type="text" placeholder="请输入关键字">
+            <div class="iconfont"><span  class="searchSign">&#xe7e8;</span></div>
+            <div class="search_button" id="search_button">搜索</div>
+            <div class="divide_line"></div>
+        </div>
+        </div>
+        <!--标签栏-->
+        <div id="tab-bar" class="tab-bar">
+        <div>关注</div>
+        <div>推荐</div>
+        <div>热榜</div>
+        </div>
+        <div class="signalLine"></div>
+    </div>
+
+    <!--正文内容-->
+    <div class="content" id="followContainer" style="margin: 8.6rem 0 0 0"></div>
+    <div id="recommendContainer" style="display: none;margin: 8.6rem 0 0 0">
+        <div class="content">
+            <div class="left">
+                <div class="title"><strong>火爆网络的《神经网络与深度学习》，有人把它翻译成了中文版！</strong></div>
+                <div class="text">红色石头： 红色石头的个人网站： 今天给大家介绍一本非常好的深度学习入门书籍，就是《Neural ...</div>
+                <div class="dynamcis">
+                    <span class="praise_number">210</span>赞同&nbsp·&nbsp<span class="comment_number">20</span>评论
+                </div>
+            </div>
+            <div class="right">
+                <img src="../icon/AI%204.jpg" class="recommendImg">
+            </div>
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="left">
+                <div class="title"><strong>什么是能源互联网？</strong></div>
+                <div class="text">严同：其似乎包含了智能通信、智能电网、智能交通等等众多智能与绿色概念。 3）国内外的能源互...</div>
+                <div class="dynamcis">
+                    <span class="praise_number">510</span>赞同&nbsp·&nbsp<span class="comment_number">120</span>评论
+                </div>
+            </div>
+            <div class="right">
+                <img src="../icon/AI.jpg" class="recommendImg">
+            </div>
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="left">
+                <div class="title"><strong>为什么说新能源汽车节省能源？</strong></div>
+                <div class="text">两天：低成本的能源意义也是巨大的。 新能源车的优势不仅仅是节能，也不仅仅是绿色,它的优势更...</div>
+                <div class="dynamcis">
+                    <span class="praise_number">210</span>赞同&nbsp·&nbsp<span class="comment_number">120</span>评论
+                </div>
+            </div>
+            <div class="right">
+                <img src="../icon/AI%203.jpg" class="recommendImg">
+            </div>
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="left">
+                <div class="title"><strong>漫谈人工智能发展史</strong></div>
+                <div class="text">我们过度担忧人工智能的安全性，就如同两百年前担心要是有了飞机，飞机坠毁怎么办。如果我们...</div>
+                <div class="dynamcis">
+                    <span class="praise_number">210</span>赞同&nbsp·&nbsp<span class="comment_number">120</span>评论
+                </div>
+            </div>
+            <div class="right">
+                <img src="../icon/AI%202.jpg" class="recommendImg">
+            </div>
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="left">
+                <div class="title"><strong>绿色能源对生态环境的影响</strong></div>
+                <div class="text">家庭光伏发电：对环境友好，不会遭受能源危机或燃料市场不稳定而造成的冲击，是真正绿色环保的...</div>
+                <div class="dynamcis">
+                    <span class="praise_number">210</span>赞同&nbsp·&nbsp<span class="comment_number">120</span>评论
+                </div>
+            </div>
+            <div class="right">
+                <img src="../icon/GreenEnergy1.jpg" class="recommendImg">
+            </div>
+        </div>
+    </div>
+
+    <div id="hotSearchContainer" style="display: none;margin: 8.8rem 0 0 0">
+        <div class="content">
+            <div class="number"><h2>1</h2></div>
+            <div class="left">
+                <div class="text"><strong>快速检验食品安全工具研发合作</strong></div>
+                <div class="text" >近期，针对于315曝光外婆家后厨的新闻引起了不小的讨论,事件背后受害的群体是广大的消费者们...</div>
+            </div>
+            <div class="right">
+                    <img src="../icon/pic4.jpg" class="recommendImg" style="max-width: 100%;max-height: 100%;border-radius: 0.5rem">
+            </div>
+            <div class="dynamcis">
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user7.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user6.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user4.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <span style="font-size: 1.4rem;color: #2D2D2D">等6.2k人关注</span>
+            </div>
+
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="number"><h2>2</h2></div>
+            <div class="left">
+                <div class="text"><strong>新绿色能源开发项目</strong></div>
+                <div class="text" >近几年，随着世界人口的不断增长，能源短缺问题愈发突出，许多地区、国家都饱受能源匮乏的侵...</div>
+            </div>
+            <div class="right">
+                <img src="../icon/pic2.jpg" class="recommendImg" style="max-width: 100%;max-height: 100%;border-radius: 0.5rem">
+            </div>
+            <div class="dynamcis">
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user8.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user5.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user9.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <span style="font-size: 1.4rem;color: #2D2D2D">等6.2k人关注</span>
+                </div>
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="number"><h2>3</h2></div>
+            <div class="left">
+                <div class="text"><strong>AI芯片研发项目</strong></div>
+                <div class="text" >随着人工智能在人们的生活中的应用，有关AI芯片的研发团队也不断增多，市场的需求量也不断增多...</div>
+            </div>
+            <div class="right">
+                <img src="../icon/pic3.jpg" class="recommendImg" style="max-width: 100%;max-height: 100%;border-radius: 0.5rem">
+            </div>
+            <div class="dynamcis">
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user1.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user2.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user3.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <span style="font-size: 1.4rem;color: #2D2D2D">等6.2k人关注</span>
+                </div>
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="number"><h2>4</h2></div>
+            <div class="left">
+                <div class="text"><strong>新社交App开发合作</strong></div>
+                <div class="text" >在信息交流频繁的时代，社交App层出不穷，其中以微信、qq为代表的常用社交软件，占据很大一部...</div>
+            </div>
+            <div class="right">
+                <img src="../icon/pic5.jpg" class="recommendImg" style="max-width: 100%;max-height: 100%;border-radius: 0.5rem">
+            </div>
+            <div class="dynamcis">
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user2.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user5.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user6.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <span style="font-size: 1.4rem;color: #2D2D2D">等6.2k人关注</span>
+                </div>
+        </div>
+        <div class="divideShadow"></div>
+        <div class="content">
+            <div class="number"><h2>5</h2></div>
+            <div class="left">
+                <div class="text"><strong>智慧校园项目</strong></div>
+                <div class="text" >在科技高速发展的如今，不得不说，人工智能占据了我们生活的很大一部分，智慧校园项目的发展...</div>
+            </div>
+            <div class="right">
+                <img src="../icon/pic7.jpg" class="recommendImg" style="max-width: 100%;max-height: 100%;border-radius: 0.5rem">
+            </div>
+            <div class="dynamcis">
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user10.jpg" style="height: 100%;width: 100%;border-radius: 50%;"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user6.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <div class="sender_picture" style="display: inline-block"><img src="../icon/user3.jpg" style="height: 100%;width: 100%;border-radius: 50%"></div>
+                    <span style="font-size: 1.4rem;color: #2D2D2D">等6.2k人关注</span>
+                </div>
+
+
+        </div>
+        <!--<div class="divideShadow"></div>
+        <div class="content">
+            <div class="number"><h2>6</h2></div>
+            <div class="left">
+                <div class="text"><strong>如何评价独立音乐人回宿舍那化学课几十块钱虚拟世界你想叫什么设计师还没就是你的三年？</strong></div>
+                <div class="dynamcis">
+                    <span class="level">101万</span>热度<span class="iconfont" style="font-size: 1.6rem; color:#979797;margin-left:  0.5rem;">&#xe678;</span>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../icon/pic6.jpg" class="recommendImg">
+            </div>
+        </div>
+        <div class="divideShadow"></div>-->
+    </div>
+
+    <!--底部导航栏-->
+    <!--<div class="bottom_line"></div>-->
+<div class="bottom_box">
+    <div class="bottom" id="bottom">
+        <div class="home_box active">
+            <div class="home_img">
+                <span class="iconfont bottomIcon">&#xe644;</span>
+            </div>
+            <div class="home bottomWord">首页</div>
+        </div>
+        <div class="find_box">
+            <div class="find_img">
+                <span class="iconfont bottomIcon">&#xe64b;</span>
+            </div>
+            <div class="find bottomWord" >发现</div>
+        </div>
+        <div class="ask_box">
+            <div class="ask">
+                <span class="my_ask" style="color: white"><h2 style="margin-top: 0.3rem">问</h2></span>
+            </div>
+        </div>
+        <div class="message_box">
+            <div class="message_img">
+                <span class="iconfont bottomIcon">&#xe64c;</span>
+            </div>
+            <div class="messages bottomWord">消息</div>
+        </div>
+        <div class="my_box">
+            <div class="my_img">
+                <span class="iconfont bottomIcon">&#xe64d;</span>
+            </div>
+            <div class="my bottomWord">我的</div>
+        </div>
+    </div>
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../js/myStorage.js"></script>
+<script src="../js/bottom.js"></script>
+<script src="../js/bottomSlideControl.js"></script>
+<script src="../js/follow.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+html{font-size:10px;}
+body{background-color: rgba(177, 232, 238, 0.67)}
+
+.top{height: 3.3rem;background: #EAEAEA;text-align: center}
+
+.title{margin:6.5rem auto;text-align: center;font-size:2.8rem;color: #1296DB}
+
+.display-option{display:flex;flex-flow:row wrap;justify-content:space-around}
+.option-container{width: 40%}
+.option{height: 14rem;width: 14rem;margin:0 auto;border-radius: 50%;background-color: #ffffff;text-align: center;font-size:1.8rem;color:#141414}
+.option .icon{text-align: center;margin:0 auto;font-size:8rem;color:#1296DB;height: 10rem;width: 10rem}
+.active{
+    background-color: #f3ba86;
+}
+
+
+.login-input{margin: 6rem 3.8rem 2.5rem 3.8rem}
+.login-input button{height:4rem;border-radius: 0.5rem;font-size: 2rem;width:100%;color: #FFFFFF;background-color: #1296DB}

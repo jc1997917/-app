@@ -1,0 +1,8 @@
+html{font-size:10px;}
+
+.top{height: 2.75rem;background: #EAEAEA;text-align: center}
+.title{ margin:4.5rem auto;text-align: center;font-size:2.8rem;color: #1296DB}
+
+.login-input{margin: 2rem 2rem 0 2rem}
+.login-input input{height:4rem;border-radius: 0.5rem;font-size: 1.5rem}
+.login-input button{height:4rem;border-radius: 0.5rem;font-size: 2rem;width:100%;color: #FFFFFF;background-color: #1296DB}

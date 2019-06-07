@@ -1,0 +1,85 @@
+.title{
+    height: 2rem;
+    width: 94%;
+    position:fixed;
+    top:0;
+    background-color: white;
+    text-align: center;
+    display:flex;
+    padding: 1.5rem 1.5rem;
+}
+.title i{
+    font-size: 1.8rem;
+    color: #393636;
+}
+.title span{
+    height: 100%;
+    font-size: 1.8rem;
+    color: #393636;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-left:1.5rem;
+}
+.viceTitle{
+    height: 1.5rem;
+    width: 94%;
+    padding:1rem 1.5rem;
+    background-color: white;
+    display:flex;
+    justify-content: space-around;
+    position:fixed;
+    top:5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #979797;
+    box-shadow: 0 4px 5px -3px  #979797;
+}
+.signalLine{
+    height: 2px;
+    width:20%;
+    background-color: #000000;
+    position:fixed;
+    top:8.3rem;
+    left:64%;
+}
+.content{
+    margin:10rem 1.5rem 1.5rem 1.5rem;
+}
+.img{
+    height: 3.5rem;
+    width: 3.5rem;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.topic{
+    display: flex;
+}
+.labelName{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #393636;
+    letter-spacing: 0.1rem;
+}
+.labelDescription{
+    font-size: 1.4rem;
+    color: #979797;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+}
+.description{
+    margin-left:1rem;
+    width:80%;
+
+}
+.divide_line{
+    height: 1px;
+    width:100%;
+    background-color: #eaeaea;
+    margin: 1.5rem 0;
+}
+.no_more{
+    text-align: center;
+    color: #979797;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}

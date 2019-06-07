@@ -1,0 +1,83 @@
+
+.title{
+    height: 2rem;
+    width: 94%;
+    position:fixed;
+    top:0;
+    background-color: white;
+    text-align: center;
+    display:flex;
+    justify-content:space-between;
+    padding: 1.5rem 1.5rem;
+    box-shadow: #979797 0 -4px 5px 4px;
+}
+.title div{
+    height: 100%;
+    font-size: 2rem;
+    color: #393636;
+    letter-spacing: 0.1rem;
+}
+.content{
+    margin: 6.5rem 1.5rem 1.5rem 1.5rem;
+}
+.title i{
+    font-size:2rem;
+    color: #393636;
+}
+.summary{
+    font-size: 1.4rem ;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+.head{
+    display: flex;
+    height: 4rem;
+    line-height: 4rem;
+}
+.text_content{
+    margin-left: 1rem;
+}
+.text_title{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-left:1rem;
+}
+.description{
+    font-size: 1.5rem;
+    color: #979797;
+    letter-spacing: 0.1rem;
+    display: flex;
+}
+.description_img{
+    height: 4rem;
+    width: 15rem;
+    overflow: hidden;
+}
+.dynamcis{
+    float:right;
+    color:#979797;
+    margin-bottom: 1rem;
+}
+.my_question{
+    box-shadow: #EAEAEA 0 0 20px 1px ;
+    padding:1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+.text{
+    width: 100%;
+    font-size: 1.4rem;
+    color: #979797;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+}
+.line{
+    height: 1px;
+    background-color: #eaeaea;
+    margin:1.5rem 0 ;
+}
+.more{
+    color: #1296db;
+    text-align: center;
+    font-size: 1.4rem;
+}

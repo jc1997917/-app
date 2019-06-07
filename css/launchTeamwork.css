@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.title{
+    float: left;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-left: 1rem;
+}
+.top{
+    padding:1rem 1.5rem;
+    width: 93%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    box-shadow: 0 4px 5px -3px  #979797;
+    position: fixed;
+    top:0;
+    background-color: #FFFFFF;
+}
+.img_box{
+    display: flex;
+    justify-content: center;
+    margin: 7.5rem 1.5rem 3rem 1.5rem;
+}
+.img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.corporate{
+    margin:1.5rem;
+}
+.cor_content{
+    border: none;
+    border-bottom: 1px solid #1296db;
+    width: 95%;
+    padding:0.5rem 1rem;
+    outline: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.cor_description{
+    border:1px solid #1296db;
+    resize: none;
+   height: 12rem;
+     width: 95%;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    padding:0.5rem 1rem;
+    outline: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.size,.begin_time,.end_time,.files{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    color: #393636;
+}
+.select{
+    outline: none;
+}
+.upload{
+    background-color: #1296db;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    padding: 0.35rem 0.8rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.button{
+    display:flex;
+    height: 2.9rem;
+    line-height: 2.9rem;
+    margin-top:0.8rem;
+}
+.label-container{
+    margin:0 1rem;
+}
+.label{
+    margin:1rem 0.6rem 0 0.6rem;
+    padding: 0.1rem 0.4rem;
+    border:0.1rem solid #707070;
+    border-radius: 0.6rem;
+    font-size:1.5rem;
+    letter-spacing: 0.1rem;
+    text-align:center;
+    color: #707070;
+    background-color: #FFFFFF
+}
+.launch{
+    margin: 3rem;
+    text-align: center;
+    padding: 0.6rem 3rem;
+    color: #FFFFFF;
+    background-color: #1296db;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    border-radius: 0.5rem;
+}

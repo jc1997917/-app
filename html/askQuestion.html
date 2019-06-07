@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>askQuestion</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/askQuestion.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <div class="return">
+            <span class="iconfont" style="font-size: 1.8rem;">&#xe6d0;</span>
+        </div>
+        <div class="title">提问 </div>
+        <div class="next" id="tiJiao">提交</div>
+    </div>
+    <div class="question_box">
+        <div class="question">
+            <input class="question_content" type="text" placeholder="请输入你的问题,并以问号结尾（30字以内）" maxlength="30">
+        </div>
+        <div class="description">
+            <textarea class="question_description " type="text" placeholder="请对你的问题进行描述（100字以内）" maxlength="100"></textarea>
+        </div>
+    </div>
+    <div class="label_box">
+        <div>
+            <span class="iconfont" style="color: #1296db;font-size: 1.8rem;float: left;">&#xe7f2;</span>
+            <div class="label_title">问题标签(至少选择一个)</div>
+            <div class="divide_line"></div>
+        </div>
+        <div class="label-container" id="label-container" style="display:flex;flex-flow:row wrap">
+            <div class="label" id="1">减振降噪</div>
+            <div class="label" id="2">新材料应用</div>
+            <div class="label" id="3">传感器</div>
+            <div class="label" id="4">绿色能源</div>
+            <div class="label" id="5">射频技术</div>
+            <div class="label" id="6">人工智能</div>
+            <div class="label" id="7">流体机械</div>
+            <div class="label" id="8">水处理技术</div>
+            <div class="label" id="9">食品技术</div>
+            <div class="label" id="10">制冷系统设计</div>
+            <div class="label" id="11">燃烧技术</div>
+            <div class="label" id="12">空气净化技术</div>
+            <div class="label" id="13">机械结构设计</div>
+            <div class="label" id="14">加热技术</div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="option">
+            <div class="reward_button">
+                <span class="iconfont" style="font-size: 2.4rem;color: #1296db;">&#xe7e4;</span>
+            </div>
+        </div>
+        <div class="line"></div>
+        <span class="reward_title">赏金数</span>
+        <div class="reward_number">
+            <input type="button" class="reward" value="10元">
+            <input type="button" class="reward" value="15元">
+            <input type="button" class="reward" value="20元">
+            <input type="button" class="reward" value="25元">
+            <input type="button" class="reward" value="30元">
+            <input type="button" class="reward" value="35元">
+            <input type="button" class="reward" value="40元">
+            <input type="button" class="reward" value="45元">
+            <input type="button" class="reward" id="userDefined" value="自定义">
+
+            <div class="reward_button">
+                <span class="iconfont" style="font-size: 3rem;color: #1296db;">&#xe7e4;</span>
+            </div>
+            <input type="text" class="form-control reward" id="userDefinedInput" style="width: 20rem;height:3.2rem;display: none" maxlength="4" placeholder="请输入您的咨询金额">
+        </div>
+    </div>
+
+</div>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../js/myStorage.js"></script>
+<script src="../js/askQuestion.js"></script>
+</body>
+</html>
+
